@@ -4,3 +4,4 @@ This file contains the path of the knowledge base and the model name. All paths 
 
 KNOWLEDGE_BASE_PATH = 'KnowledgeDocument(pan_card_services).txt'
 MODEL_NAME = 'gpt-3.5-turbo-0301'
+WHISPER_MODEL_NAME = 'small'

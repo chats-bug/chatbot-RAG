@@ -15,7 +15,6 @@ class Chatbot:
         self.embeddings = OpenAIEmbeddings()
         self.path_to_root = "../"
         self.knowledge_base_path = os.path.join(self.path_to_root, knowledge_base_path)
-        print(self.knowledge_base_path)
         self._load_knowledge_base(self.knowledge_base_path)
         self._load_model(model_name)
         self._load_prompt_template()
@@ -44,7 +43,7 @@ class Chatbot:
         {context}
         Question: {question}
         Helpful Answer:"""
-        self.qa_chain_prompt = PromptTemplate(input_variables=["context", "question"],template=template)
+        self.qa_chain_prompt = PromptTemplate(input_variables=["context", "question"], template=template)
 
 
     def _load_model(self, model_name):

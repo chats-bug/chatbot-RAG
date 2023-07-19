@@ -25,7 +25,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
 
     msg.submit(respond, [msg, chatbot], [msg, chatbot])
 
-demo.launch()
+demo.launch(share=True)
 
 # To run this demo, run the following command in your terminal:
     # gradio demo chatbot.py
